@@ -1,6 +1,6 @@
 {
-    "name": "listview_gridview",
-    "short_name": "listview_gridview",
+    "name": "FlutterView",
+    "short_name": "FlutterView",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#hexcode",
