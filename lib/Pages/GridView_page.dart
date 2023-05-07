@@ -1,50 +1,106 @@
 import 'package:flutter/material.dart';
+import 'GridView/MyGridViewPage.dart';
+import 'GridView/MyGridViewCustomPage.dart';
+import 'GridView/MyGridViewCountPage.dart';
+import 'GridView/MyGridViewBuilderPage.dart';
+import 'GridView/MyGridViewExtentPage.dart';
 
-class GridViewBuilder extends StatelessWidget {
-  GridViewBuilder({ Key? key }) : super(key: key);
+class MyGridViewConstructorsPage extends StatefulWidget {
+  MyGridViewConstructorsPage();
 
- final List<String> picturesUrl = <String>[
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
-   'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
+  @override
+  _MyGridViewConstructorsPageState createState() =>
+      _MyGridViewConstructorsPageState();
+}
 
-   ];
+class _MyGridViewConstructorsPageState
+    extends State<MyGridViewConstructorsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Grid View Builder Example"),
-      ),
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
-          childAspectRatio: 1.3
+      appBar: AppBar(title: Text('GridView')),
+      body: Container(
+        margin: EdgeInsets.only(top: 15),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              width: double.infinity,
+              height: 60,
+              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+              child: ElevatedButton(
+                  child: Text('GridView()',
+                      style: TextStyle(color: Colors.white, fontSize: 25)),
+                  onPressed: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:(context)=> MyGridViewPage())
+                  );
+  },
+            )),
+
+            Container(
+              width: double.infinity,
+              height: 60,
+              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+              child: ElevatedButton(
+                  child: Text('GridView.count()',
+                      style: TextStyle(color: Colors.white, fontSize: 25)),
+                  onPressed: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:(context)=> MyGridViewCountPage())
+                  );
+  },
+            )),
+
+
+            Container(
+              width: double.infinity,
+              height: 60,
+              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+              child: ElevatedButton(
+                  child: Text('GridView.builder()',
+                      style: TextStyle(color: Colors.white, fontSize: 25)),
+                  onPressed: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:(context)=> MyGridViewBuilderPage())
+                  );
+  },
+            )),
+
+
+            Container(
+              width: double.infinity,
+              height: 60,
+              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+              child: ElevatedButton(
+                  child: Text('GridView.custom()',
+                      style: TextStyle(color: Colors.white, fontSize: 25)),
+                  onPressed: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:(context)=> MyGridViewCustomPage())
+                  );
+  },
+            )),
+
+
+            Container(
+              width: double.infinity,
+              height: 60,
+              margin: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+              child: ElevatedButton(
+                  child: Text('GridView.extent()',
+                      style: TextStyle(color: Colors.white, fontSize: 25)),
+                  onPressed: () { Navigator.push(
+                        context,
+                        MaterialPageRoute(builder:(context)=> MyGridViewExtentPage())
+                  );
+  },
+            )),
+
+
+
+          ],
         ),
-        itemCount: picturesUrl.length,
-        itemBuilder: (context, index){
-          return Padding(
-            padding: const EdgeInsets.all(2.0),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(5),
-              child: Image(
-                fit: BoxFit.cover,
-                width: double.infinity,
-                height: 400,
-                image: NetworkImage(picturesUrl[index])),
-            ),
-          );
-        },
       ),
     );
   }
