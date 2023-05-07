@@ -30,9 +30,8 @@ class _MyGridViewCountPageState extends State<MyGridViewCountPage> {
         padding: EdgeInsets.only(top: 15),
         child: GridView.count(
           crossAxisCount: 3,
-          padding: const EdgeInsets.all(5.0),
-          mainAxisSpacing: 5.0,
-          crossAxisSpacing: 5.0,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
           children: <Widget>[
             info('Title 1', Colors.red),
             info('Title 2', Colors.pinkAccent),
