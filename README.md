@@ -4,13 +4,31 @@ ListView & GridView
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+## Table des matières
 
-A few resources to get you started if this is your first Flutter project:
+- [Showcase](#Showcase)
+- [Installation](#installation)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Showcase
+
+| ListView                  | ListView                   | GridView                       |
+| ---                       | ---                        | ---                          |
+|![](https://github.com/mobiten/flutter_staggered_animations/blob/master/assets/card_list.gif?raw=true)  | ![](https://github.com/mobiten/flutter_staggered_animations/blob/master/assets/card_grid.gif?raw=true)  | ![](https://github.com/mobiten/flutter_staggered_animations/blob/master/assets/card_column.gif?raw=true)  |
+
+## Installation
+
+
+
+### Dependency
+Add the package as a dependency in your pubspec.yaml file.
+```yaml
+dependencies:
+  flutter_launcher_icons: "^0.13.1"
+```
+
+### Import
+Import the package in your code file.
+```dart
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+```
