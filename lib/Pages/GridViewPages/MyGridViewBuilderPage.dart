@@ -48,7 +48,7 @@ class _MyGridViewBuilderPageState extends State<MyGridViewBuilderPage> {
         child: GridView.builder(
           gridDelegate:
               SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-          itemCount: 4,
+          itemCount: 10,
           itemBuilder: (BuildContext context, int index) {
             return info('Title ${index + 1}', colors[index % colors.length]);
           },

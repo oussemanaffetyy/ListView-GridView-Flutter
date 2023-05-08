@@ -1,39 +1,37 @@
 import 'package:flutter/material.dart';
 
-class MyGridViewCustomPage extends StatefulWidget {
+class MyGridViewExtentPage extends StatefulWidget {
   @override
-  State<MyGridViewCustomPage> createState() => _MyGridViewCustomPageState();
+  State<MyGridViewExtentPage> createState() => _MyGridViewExtentPageState();
 }
 
 Widget info(String title, Color color) {
   return Container(
     padding: EdgeInsets.all(15),
-    margin: EdgeInsets.all(5),
+        margin:EdgeInsets.all(5),
+
     child: Text(
       title,
       style: TextStyle(fontSize: 30),
     ),
-    decoration: BoxDecoration(
-      color: color,
-      borderRadius: BorderRadius.circular(15),
-    ),
+    decoration:
+        BoxDecoration(color: color, borderRadius: BorderRadius.circular(15)),
   );
 }
 
-class _MyGridViewCustomPageState extends State<MyGridViewCustomPage> {
+class _MyGridViewExtentPageState extends State<MyGridViewExtentPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('GridView.custom()'),
+        title: Text('GridView.extent()'),
       ),
       body: Container(
         padding: EdgeInsets.only(top: 15),
-        child: GridView.custom(
-          gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-          childrenDelegate: SliverChildListDelegate([
+        child: GridView.extent(
+          maxCrossAxisExtent: 170,
+          children: <Widget>[
             info('Title 1', Colors.red),
             info('Title 2', Colors.pinkAccent),
             info('Title 3', Colors.amber),
@@ -46,7 +44,7 @@ class _MyGridViewCustomPageState extends State<MyGridViewCustomPage> {
             info('Title 11', Colors.blue),
             info('Title 12', Colors.pink),
             info('Title 13', Colors.green),
-          ]),
+          ],
         ),
       ),
     );

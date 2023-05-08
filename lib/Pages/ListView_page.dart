@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'ListView/MyListViewPage.dart';
-import 'ListView/MyListViewBuilderPage.dart';
-import 'ListView/MyListViewCustomPage.dart';
-import 'ListView/MyListViewSeparatedPage.dart';
+import 'ListViewPages/MyListViewPage.dart';
+import 'ListViewPages/MyListViewBuilderPage.dart';
+import 'ListViewPages/MyListViewCustomPage.dart';
+import 'ListViewPages/MyListViewSeparatedPage.dart';
 
 class MyListViewConstructorsPage extends StatefulWidget {
   MyListViewConstructorsPage();
@@ -34,7 +34,7 @@ class _MyListViewConstructorsPage
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => MyListViewBuilder()));
+                            builder: (context) => MyListViewPage()));
                   },
                 )),
             Container(
@@ -62,7 +62,7 @@ class _MyListViewConstructorsPage
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => MyListViewBuilder()));
+                            builder: (context) => MyListViewSeparatedPage()));
                   },
                 )),
             Container(
@@ -76,7 +76,7 @@ class _MyListViewConstructorsPage
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => MyListViewBuilder()));
+                            builder: (context) => MyListViewCustomPage()));
                   },
                 )),
           ],

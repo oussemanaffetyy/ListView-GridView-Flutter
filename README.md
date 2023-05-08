@@ -6,19 +6,13 @@ ListView & GridView
 
 ## Table des matières
 
-- [Showcase](#Showcase)
 - [Installation](#installation)
 
 
 ## Showcase
 
-| ListView                  | ListView                   | GridView                       |
-| ---                       | ---                        | ---                          |
-
-|![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  |
 
 ## Installation
-
 
 
 ### Dependency
