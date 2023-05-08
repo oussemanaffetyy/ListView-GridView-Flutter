@@ -11,6 +11,11 @@ ListView & GridView
 
 ## Showcase
 
+<<<<<<< HEAD
+=======
+| ListView                  | GridView                   |
+| ---                       | ---                        |
+>>>>>>> 534bcd07461edea9fd7fe484a2a6539b491d04c3
 
 ## Installation
 
