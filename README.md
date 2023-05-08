@@ -12,10 +12,10 @@ ListView & GridView
 
 ## Showcase
 
-| ListView                  | ListView                   | GridView                       |
-| ---                       | ---                        | ---                          |
-
-|![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  |
+| ListView                  | GridView                   |
+| ---                       | ---                        |
+https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/listView.png
+|![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/listView.png?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/gridView.png?raw=true)  | ![]
 
 ## Installation
 
