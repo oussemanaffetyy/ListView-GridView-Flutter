@@ -28,14 +28,16 @@ class _HomePageState extends State<HomePage> {
                 height: 60,
                 margin: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 child: ElevatedButton(
+                  
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ListViewTest()));
+                            builder: (context) => MyListViewConstructorsPage()));
                   },
-                  child: new Text(
+                  child:  Text(
                     "ListView Exemple",
+                    style: TextStyle(color: Colors.white, fontSize: 25)
                   ),
                 ),
               ),
@@ -52,6 +54,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: new Text(
                     "GridView Exemple",
+                    style: TextStyle(color: Colors.white, fontSize: 25)
                   ),
                 ),
               ),

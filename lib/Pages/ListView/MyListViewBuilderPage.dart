@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ListViewBuilder extends StatelessWidget {
-  ListViewBuilder({ Key? key }) : super(key: key);
+class MyListViewBuilder extends StatelessWidget {
+  MyListViewBuilder({ Key? key }) : super(key: key);
  final List<String> picturesUrl = <String>[
    'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
    'https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_1280.jpg',
@@ -18,7 +18,7 @@ class ListViewBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("List View Builder Example"),
+        title: Text("List View Builder "),
       ),
       body: ListView.builder(
         padding: EdgeInsets.all(8),
