@@ -15,10 +15,6 @@ ListView & GridView
 | ListView                  | GridView                   |
 | ---                       | ---                        |
 
-|![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/gridView.png?raw=true)  | ![]
-(https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/gridView.png?raw=true)  |
-
-|![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  | ![](https://github.com/oussemanaffetyy/ListView-GridView-Flutter/blob/main/assets/Listview-example.gif?raw=true)  |
 ## Installation
 
 
