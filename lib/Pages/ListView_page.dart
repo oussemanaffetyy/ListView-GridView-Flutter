@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'ListViewPages/MyListViewPage.dart';
 import 'ListViewPages/MyListViewBuilderPage.dart';
 import 'ListViewPages/MyListViewCustomPage.dart';
+import 'ListViewPages/MyListViewScreenPage.dart';
 import 'ListViewPages/MyListViewSeparatedPage.dart';
 
 class MyListViewConstructorsPage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _MyListViewConstructorsPage
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => MyListViewPage()));
+                            builder: (context) => MyListViewScreenPage()));
                   },
                 )),
             Container(

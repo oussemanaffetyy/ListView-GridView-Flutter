@@ -26,12 +26,165 @@ class _MyListViewPageState extends State<MyListViewPage> {
         centerTitle: true,
         title: Text('ListView()'),
       ),
-      body: Container(
+      body:Column(
+        children: [
+          Container(
+            height: 25,
+            child: Text(
+                "ListView Horizontal",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)
+            ),
+          ),
+          Container(
+            height: 100,
+            child:ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.yellowAccent,
+                    ),
+
+                  ) ,
+                ),
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.orange,
+                    ),
+
+                  ) ,
+                ),
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.green,
+                    ),
+
+                  ) ,
+                ),
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.pinkAccent,
+                    ),
+
+                  ) ,
+                ),
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.orangeAccent,
+                    ),
+
+                  ) ,
+                ),
+
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.purple,
+                    ),
+
+                  ) ,
+                ),
+                Padding(padding:EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:Colors.blueAccent,
+                    ),
+
+                  ) ,
+                ),
+
+
+
+              ],
+            ),),
+          Container(
+            height: 25,
+            child: Text(
+                "ListView Vertical",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)
+            ),
+          ),
+          Expanded(child: ListView(
+            scrollDirection: Axis.vertical,
+            children:[
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.pink,
+                ),),
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.green,
+                ),),
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.orange,
+                ),),
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.purple,
+                ),),
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.blueAccent,
+                ),),
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.deepOrange,
+                ),),
+              Padding(padding:EdgeInsets.all(10),
+                child:
+                Container(
+                  height: 100.0,
+                  color: Colors.greenAccent,
+                ),),
+            ],),)
+        ],
+
+      ));
+  }
+}
+/* Container(
         padding: EdgeInsets.only(top: 15),
         child: ListView(
 
            children: [
-    ListTile(
+           ListTile(
       leading: Icon(Icons.access_alarm),
       title: Text('Set alarm'),
       subtitle: Text('6:00 AM'),
@@ -57,10 +210,6 @@ class _MyListViewPageState extends State<MyListViewPage> {
       onTap: () {
         // Action à effectuer lorsque l'élément est cliqué
       },
-    ),
-  ],
+    ),],
         )
-      ),
-    );
-  }
-}
+      ),*/
