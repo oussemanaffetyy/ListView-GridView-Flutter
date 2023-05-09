@@ -11,9 +11,10 @@ class MainSplashScreen extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: EasySplashScreen(
-          logo: Image.asset('assets/img.png'),
+          logo: Image.asset('assets/logo.png'),
+          
           title: Text(
-            "ListView | GridView Exemples",
+            "ListView | GridView : Exemples",
             style: TextStyle(
               fontSize: 18,
               color: Colors.white,
@@ -21,7 +22,7 @@ class MainSplashScreen extends StatelessWidget {
             ),
           ),
           backgroundColor: Color(0xff289eff),
-          logoWidth: 200,
+          logoWidth: 100,
           showLoader: true,
           loadingText: Text("Loading..."),
           navigator: HomePage(),

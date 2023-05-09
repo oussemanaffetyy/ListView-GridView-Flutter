@@ -5,59 +5,48 @@ class MyGridViewBuilderPage extends StatefulWidget {
   State<MyGridViewBuilderPage> createState() => _MyGridViewBuilderPageState();
 }
 
-Widget info(String title, Color color) {
-  return Container(
-    padding: EdgeInsets.all(15),
-    margin: EdgeInsets.all(5),
-    child: Text(
-      title,
-      style: TextStyle(fontSize: 30),
-    ),
-    decoration: BoxDecoration(
-      color: color,
-      borderRadius: BorderRadius.circular(15),
-    ),
-  );
-}
-
 class _MyGridViewBuilderPageState extends State<MyGridViewBuilderPage> {
-  final List<Color> colors = [
-    Colors.red,
-    Colors.pinkAccent,
-    Colors.amber,
-    Colors.blue,
-    Colors.pink,
-    Colors.green,
-    Colors.red,
-    Colors.purple,
-    Colors.pinkAccent,
-    Colors.amber,
-    Colors.pink,
-    Colors.green,
-  ];
-
   @override
   Widget build(BuildContext context) {
+    List images = [
+      "assets/Places/1.jpg",
+      "assets/Places/2.jpg",
+      "assets/Places/3.jpg",
+      "assets/Places/4.jpg",
+      "assets/Places/5.jpg",
+      "assets/Places/6.jpg",
+      "assets/Places/7.jpg",
+      "assets/Places/8.jpg",
+      "assets/Places/9.jpg",
+      "assets/Places/10.jpg",
+      "assets/Places/11.jpg",
+      "assets/Places/12.jpg",
+      "assets/Places/13.jpg",
+      "assets/Places/14.jpg",
+      "assets/Places/15.jpg",
+      "assets/Places/16.jpg",
+      "assets/Places/17.jpg",
+      "assets/Places/18.jpg",
+      "assets/Places/19.jpg",
+      "assets/Places/20.jpg",
+      "assets/Places/21.jpg",
+    ];
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text('GridView.builder()'),
-      ),
-      body: Container(
-        padding: EdgeInsets.only(top: 15),
-        child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            mainAxisSpacing: 10,
-            crossAxisSpacing: 10,
-            childAspectRatio: 1,
-          ),
-          itemCount: 10,
-          itemBuilder: (BuildContext context, int index) {
-            return info('Title ${index + 1}', colors[index % colors.length]);
-          },
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('GridView.builder()'),
         ),
-      ),
-    );
+        body: Container(
+            padding: EdgeInsets.only(top: 15),
+            child: GridView.builder(
+              itemCount: images.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Image.asset(images[index], fit: BoxFit.cover);
+              },
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3, mainAxisSpacing: 10, crossAxisSpacing: 10),
+              padding: const EdgeInsets.all(10),
+              shrinkWrap: true,
+            )));
   }
 }
