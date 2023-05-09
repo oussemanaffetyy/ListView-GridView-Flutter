@@ -30,7 +30,7 @@ class _MyGridViewExtentPageState extends State<MyGridViewExtentPage> {
       body: Container(
         padding: EdgeInsets.only(top: 15),
         child: GridView.extent(
-          maxCrossAxisExtent: 170,
+          maxCrossAxisExtent: 150,
           children: <Widget>[
             info('Title 1', Colors.red),
             info('Title 2', Colors.pinkAccent),

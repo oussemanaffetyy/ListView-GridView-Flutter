@@ -29,8 +29,12 @@ class _MyGridViewPageState extends State<MyGridViewPage> {
       body: Container(
         padding: EdgeInsets.only(top: 15),
         child: GridView(
-          gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 10,
+            crossAxisSpacing: 10,
+            childAspectRatio: 1,
+          ),
           children: <Widget>[
             info('Title 1', Colors.red),
             info('Title 2', Colors.pinkAccent),

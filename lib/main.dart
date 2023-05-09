@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:listview_gridview/Pages/home_page.dart';
-
+import 'package:listview_gridview/mainSplashScreen.dart';
 
 void main() {
   runApp(new MyApp());
@@ -11,9 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ListView GridView',
-      
-      home: HomePage(),
+      home: MainSplashScreen(),
     );
   }
 }

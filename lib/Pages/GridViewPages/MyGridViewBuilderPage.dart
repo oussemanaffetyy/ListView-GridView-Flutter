@@ -46,8 +46,12 @@ class _MyGridViewBuilderPageState extends State<MyGridViewBuilderPage> {
       body: Container(
         padding: EdgeInsets.only(top: 15),
         child: GridView.builder(
-          gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 10,
+            crossAxisSpacing: 10,
+            childAspectRatio: 1,
+          ),
           itemCount: 10,
           itemBuilder: (BuildContext context, int index) {
             return info('Title ${index + 1}', colors[index % colors.length]);
