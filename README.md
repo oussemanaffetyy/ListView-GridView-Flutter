@@ -11,11 +11,8 @@ ListView & GridView
 
 ## Showcase
 
-<<<<<<< HEAD
-=======
 | ListView                  | GridView                   |
 | ---                       | ---                        |
->>>>>>> 534bcd07461edea9fd7fe484a2a6539b491d04c3
 
 ## Installation
 
@@ -25,10 +22,11 @@ Add the package as a dependency in your pubspec.yaml file.
 ```yaml
 dependencies:
   flutter_launcher_icons: "^0.13.1"
+  easy_splash_screen: ^1.0.4
 ```
 
 ### Import
 Import the package in your code file.
 ```dart
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
 ```

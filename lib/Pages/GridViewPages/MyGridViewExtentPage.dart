@@ -1,25 +1,30 @@
 import 'package:flutter/material.dart';
 
-class MyGridViewExtentPage extends StatefulWidget {
-  @override
-  State<MyGridViewExtentPage> createState() => _MyGridViewExtentPageState();
-}
+class MyGridViewExtentPage extends StatelessWidget {
+  final List<String> images = [
+    "assets/Places/1.jpg",
+    "assets/Places/2.jpg",
+    "assets/Places/3.jpg",
+    "assets/Places/4.jpg",
+    "assets/Places/5.jpg",
+    "assets/Places/6.jpg",
+    "assets/Places/7.jpg",
+    "assets/Places/8.jpg",
+    "assets/Places/9.jpg",
+    "assets/Places/10.jpg",
+    "assets/Places/11.jpg",
+    "assets/Places/12.jpg",
+    "assets/Places/13.jpg",
+    "assets/Places/14.jpg",
+    "assets/Places/15.jpg",
+    "assets/Places/16.jpg",
+    "assets/Places/17.jpg",
+    "assets/Places/18.jpg",
+    "assets/Places/19.jpg",
+    "assets/Places/20.jpg",
+    "assets/Places/21.jpg",
+  ];
 
-Widget info(String title, Color color) {
-  return Container(
-    padding: EdgeInsets.all(15),
-        margin:EdgeInsets.all(5),
-
-    child: Text(
-      title,
-      style: TextStyle(fontSize: 30),
-    ),
-    decoration:
-        BoxDecoration(color: color, borderRadius: BorderRadius.circular(15)),
-  );
-}
-
-class _MyGridViewExtentPageState extends State<MyGridViewExtentPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,21 +35,11 @@ class _MyGridViewExtentPageState extends State<MyGridViewExtentPage> {
       body: Container(
         padding: EdgeInsets.only(top: 15),
         child: GridView.extent(
-          maxCrossAxisExtent: 150,
-          children: <Widget>[
-            info('Title 1', Colors.red),
-            info('Title 2', Colors.pinkAccent),
-            info('Title 3', Colors.amber),
-            info('Title 4', Colors.blue),
-            info('Title 5', Colors.pink),
-            info('Title 7', Colors.green),
-            info('Title 8', Colors.red),
-            info('Title 9', Colors.pinkAccent),
-            info('Title 10', Colors.amber),
-            info('Title 11', Colors.blue),
-            info('Title 12', Colors.pink),
-            info('Title 13', Colors.green),
-          ],
+          maxCrossAxisExtent: 400,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          padding: const EdgeInsets.all(10),
+          children: images.map((image) => Image.asset(image, fit: BoxFit.cover)).toList(),
         ),
       ),
     );
