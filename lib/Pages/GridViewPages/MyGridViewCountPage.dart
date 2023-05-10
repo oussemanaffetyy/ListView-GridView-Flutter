@@ -1,24 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyGridViewCountPage extends StatefulWidget {
-  @override
-  State<MyGridViewCountPage> createState() => _MyGridViewCountPageState();
-}
-
-Widget info(String title, Color color) {
-  return Container(
-    padding: EdgeInsets.all(15),
-    margin: EdgeInsets.all(5),
-    child: Text(
-      title,
-      style: TextStyle(fontSize: 30),
-    ),
-    decoration:
-        BoxDecoration(color: color, borderRadius: BorderRadius.circular(15)),
-  );
-}
-
-class _MyGridViewCountPageState extends State<MyGridViewCountPage> {
+class MyGridViewCountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,4 +31,17 @@ class _MyGridViewCountPageState extends State<MyGridViewCountPage> {
       ),
     );
   }
+}
+
+Widget info(String title, Color color) {
+  return Container(
+    padding: EdgeInsets.all(15),
+    margin: EdgeInsets.all(5),
+    child: Text(
+      title,
+      style: TextStyle(fontSize: 30),
+    ),
+    decoration:
+        BoxDecoration(color: color, borderRadius: BorderRadius.circular(15)),
+  );
 }

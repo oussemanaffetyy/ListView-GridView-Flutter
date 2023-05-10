@@ -1,24 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyGridViewPage extends StatefulWidget {
-  @override
-  State<MyGridViewPage> createState() => _MyGridViewPageState();
-}
-
-Widget info(String title, Color color) {
-  return Container(
-    padding: EdgeInsets.all(15),
-    margin: EdgeInsets.all(5),
-    child: Text(
-      title,
-      style: TextStyle(fontSize: 30),
-    ),
-    decoration:
-        BoxDecoration(color: color, borderRadius: BorderRadius.circular(15)),
-  );
-}
-
-class _MyGridViewPageState extends State<MyGridViewPage> {
+class MyGridViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,4 +35,17 @@ class _MyGridViewPageState extends State<MyGridViewPage> {
       ),
     );
   }
+}
+
+Widget info(String title, Color color) {
+  return Container(
+    padding: EdgeInsets.all(15),
+    margin: EdgeInsets.all(5),
+    child: Text(
+      title,
+      style: TextStyle(fontSize: 30),
+    ),
+    decoration:
+        BoxDecoration(color: color, borderRadius: BorderRadius.circular(15)),
+  );
 }

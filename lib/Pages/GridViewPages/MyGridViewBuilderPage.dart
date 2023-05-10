@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyGridViewBuilderPage extends StatefulWidget {
-  @override
-  State<MyGridViewBuilderPage> createState() => _MyGridViewBuilderPageState();
-}
-
-class _MyGridViewBuilderPageState extends State<MyGridViewBuilderPage> {
+class MyGridViewBuilderPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List images = [
@@ -47,6 +42,8 @@ class _MyGridViewBuilderPageState extends State<MyGridViewBuilderPage> {
                   crossAxisCount: 3, mainAxisSpacing: 10, crossAxisSpacing: 10),
               padding: const EdgeInsets.all(10),
               shrinkWrap: true,
-            )));
+            )
+            )
+            );
   }
 }
