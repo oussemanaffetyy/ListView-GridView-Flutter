@@ -7,8 +7,8 @@ ListView & GridView
 ## Table des matières
 
 - [Capture](#Capture)
--[ListView](##ListView)
--[GridView](##GridView)
+- [ListView](##ListView)
+- [GridView](##GridView)
 - [Installation](#installation)
 
 
@@ -27,7 +27,7 @@ ListView & GridView
 ## GridView
 | GridView() | Grid.builder() | Grid.count() | Grid.extent() |
 |:---------:|:---------:|:---------:|:---------:|
-| ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridview.png) | ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewbuilder.png) | ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewcount.png) | ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewextent.png) |
+| ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewsimple.png) | ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewbuilder.png) | ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewcount.png) | ![](https://github.com/oussemanaffetyy/FlutterScreenshot/blob/main/screenshot/gridviewextent.png) |
 
 
 ## Installation
