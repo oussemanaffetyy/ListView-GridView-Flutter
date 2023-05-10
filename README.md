@@ -1,14 +1,10 @@
-# ListView & GridView Exemple
-
-ListView & GridView
+# ListView | GridView Exemple
 
 ## Getting Started
 
 ## Table des matières
 
 - [Capture](#Capture)
-- [ListView](##ListView)
-- [GridView](##GridView)
 - [Installation](#installation)
 
 
