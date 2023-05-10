@@ -1,18 +1,16 @@
 # ListView | GridView Exemple
 
-## Getting Started
+## 1- Créez un nouveau dossier
+## 2- Ouvrez votre terminal 
+## 3- Naviguer vers l'emplacement où vous souhaitez créer votre nouveau dossier.
+## 4- Exécutez la commande: git clone https://github.com/oussemanaffetyy/ListView-GridView-Flutter.git
+## 5- Exécutez la commande flutter pub get pour installer les dépendances du projet Flutter.
 
 ## Table des matières
 
 - [Capture](#Capture)
 - [Installation](#installation)
 
-
-1- Créez un nouveau dossier
-2- Ouvrez votre terminal 
-3- Naviguer vers l'emplacement où vous souhaitez créer votre nouveau dossier.
-4- Exécutez la commande: git clone https://github.com/oussemanaffetyy/ListView-GridView-Flutter.git
-5- Exécutez la commande flutter pub get pour installer les dépendances du projet Flutter.
 
 
 # Capture
