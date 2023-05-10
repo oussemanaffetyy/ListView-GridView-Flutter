@@ -7,8 +7,8 @@ ListView & GridView
 ## Table des matières
 
 - [Capture](#Capture)
-  -[ListView](##ListView)
-  -[GridView](##GridView)
+-[ListView](##ListView)
+-[GridView](##GridView)
 - [Installation](#installation)
 
 
