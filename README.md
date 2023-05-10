@@ -11,9 +11,9 @@ ListView & GridView
 
 ## Showcase
 
-| Picture 1 | Picture 2 |
-|:---------:|:---------:|
-| ![](https://github.com/oussemanaffetyy/CV-HTML5/blob/main/screenshot/Screenshot_1683662777.png) | ![](https://github.com/oussemanaffetyy/CV-HTML5/blob/main/screenshot/Screenshot_1683662784.png) |
+| Picture 1 | Picture 2 | Picture 3 |
+|:---------:|:---------:|:---------:|
+| ![](https://github.com/oussemanaffetyy/CV-HTML5/blob/main/screenshot/Screenshot_1683662777.png) | ![](https://github.com/oussemanaffetyy/CV-HTML5/blob/main/screenshot/Screenshot_1683662784.png) | ![](https://github.com/oussemanaffetyy/CV-HTML5/blob/main/screenshot/Screenshot_1683673795.png) |
 
 ## Installation
 
