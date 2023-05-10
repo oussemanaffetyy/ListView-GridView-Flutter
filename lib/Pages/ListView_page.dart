@@ -4,16 +4,9 @@ import 'ListViewPages/MyListViewCustomPage.dart';
 import 'ListViewPages/MyListViewScreenPage.dart';
 import 'ListViewPages/MyListViewSeparatedPage.dart';
 
-class MyListViewConstructorsPage extends StatefulWidget {
+class MyListViewConstructorsPage extends StatelessWidget {
   MyListViewConstructorsPage();
 
-  @override
-  _MyListViewConstructorsPage createState() =>
-      _MyListViewConstructorsPage();
-}
-
-class _MyListViewConstructorsPage
-    extends State<MyListViewConstructorsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

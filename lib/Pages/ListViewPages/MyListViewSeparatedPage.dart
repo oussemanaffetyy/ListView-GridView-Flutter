@@ -42,7 +42,7 @@ class MyListViewSeparatedPage extends StatelessWidget {
               height: 150,
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
-                itemCount: _Post.length,
+                itemCount: _Storie.length,
                 itemBuilder: (context , index){
                   return Padding(padding:EdgeInsets.all(10),
                     child: Container(

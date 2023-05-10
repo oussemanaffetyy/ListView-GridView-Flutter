@@ -4,16 +4,9 @@ import 'GridViewPages/MyGridViewCountPage.dart';
 import 'GridViewPages/MyGridViewBuilderPage.dart';
 import 'GridViewPages/MyGridViewExtentPage.dart';
 
-class MyGridViewConstructorsPage extends StatefulWidget {
+class MyGridViewConstructorsPage extends StatelessWidget {
   MyGridViewConstructorsPage();
 
-  @override
-  _MyGridViewConstructorsPageState createState() =>
-      _MyGridViewConstructorsPageState();
-}
-
-class _MyGridViewConstructorsPageState
-    extends State<MyGridViewConstructorsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
